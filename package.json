@@ -1,0 +1,19 @@
+{
+  "name": "demo-node",
+  "version": "1.0.0",
+  "description": "demo nodejs pour les stagiaires interface 3 namur",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheDoCtcoder/DemoNodejs3Namur.git"
+  },
+  "author": "Toni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheDoCtcoder/DemoNodejs3Namur/issues"
+  },
+  "homepage": "https://github.com/TheDoCtcoder/DemoNodejs3Namur#readme"
+}
