@@ -1,1 +1,1 @@
-clg("test");
+console.log('test');
