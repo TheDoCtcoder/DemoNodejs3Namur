@@ -47,16 +47,32 @@ var calcul = {
                 if (ladate.getDate() =="13" && ladate.getDay()=="5"){
                     var  Diff_temps =  ladate - madate2; 
                     var  Diff_jours = Diff_temps / (1000 * 3600 * 24); 
-        console.log(ladate +" Le nombre de jours entre les deux dates est de " + Math.round(Diff_jours) + " jours")
+        console.log("le "+ladate.toLocaleString() +" Le nombre de jours entre les deux dates est de " + Math.round(Diff_jours) + " jours")
 
                 }
             }
             
        
             
+    },
+    vendredi13v2: function (vendredi13v2) {
+        const madate = new Date();
+        let date23 = new Date();
+        let i=0;
+
+        while (date23.getDay()!="5" )
+         {
+            i++;
+            date23.setMonth(date23.getMonth()+i);
+            date23.setDate(13);
+        } 
+        var  Diff_temps =  date23 - madate; 
+        var  Diff_jours = Diff_temps / (1000 * 3600 * 24); 
+        console.log("le prochain Vendredi 13 sera le "+date23.toLocaleString()+" Le nombre de jours entre les deux dates est de " + Math.round(Diff_jours) + " jours\n\n")
     }
 }
 
 
 
 module.exports = calcul;
+

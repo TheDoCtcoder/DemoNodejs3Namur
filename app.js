@@ -7,7 +7,9 @@ var calculdate = require('./Modules/Simple/calcul');
         calculdate.noel();
         calculdate.anniversaire();
         calculdate.solstice();
+        calculdate.vendredi13v2();
         calculdate.vendredi13();
+
     
 
 
