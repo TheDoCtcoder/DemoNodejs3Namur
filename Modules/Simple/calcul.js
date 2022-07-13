@@ -60,6 +60,7 @@ var calcul = {
         let date23 = new Date();
         let i=0;
 
+        if ((date23.getDate()) !="13" || ((date23.getDay()) !="5")){
         while (date23.getDay()!="5" )
          {
             i++;
@@ -70,6 +71,8 @@ var calcul = {
         var  Diff_jours = Diff_temps / (1000 * 3600 * 24); 
         console.log("le prochain Vendredi 13 sera le "+date23.toLocaleString()+" Le nombre de jours entre les deux dates est de " + Math.round(Diff_jours) + " jours\n\n")
     }
+    else console.log("Nous sommes Vendredi 13");
+} 
 }
 
 
