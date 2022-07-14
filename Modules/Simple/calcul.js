@@ -54,13 +54,13 @@ var calcul = {
             solsticehiver.setMonth(11);
             solsticehiver.setDate(21);
 
-                if((madate.getMonth() < "5") || (madate.getMonth()=="5" && madate.getDate()<"20"))
+                if((madate.getMonth() < "5") || (madate.getMonth()=="5" && madate.getDate()<"21"))
                 {
                     var  Diff_temps =  solsticeete - madate; 
                     var  Diff_jours = Diff_temps / (1000 * 3600 * 24); 
                     console.log("Le nombre de jours pour être au solstice d'été est de " + Math.round(Diff_jours) + " jours")
                 }
-                else if ((madate.getMonth() == "11") &&  madate.getDate()>"21"){
+                else if ((madate.getMonth() == "11") &&  madate.getDate()>"20"){
                     solsticeete.setFullYear(solsticeete.getFullYear()+1);
                     var  Diff_temps =  solsticeete - madate; 
                     var  Diff_jours = Diff_temps / (1000 * 3600 * 24); 
